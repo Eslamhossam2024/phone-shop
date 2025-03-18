@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/1515.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* start header */
+.container{
+    min-height: 100vh;
+    min-width: 100%;
+    transition: 0.5s;
+
+}
+
+header{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo{
+    width: 60px;
+    animation-name: rotate360;
+    animation-duration: 20s;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+header ul li{
+    display: inline-block;
+    padding: 6px;
+
+}
+header ul li a{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    color: rgb(255, 255, 255);
+    border: 2px solid burlywood;
+}
+/* end header */
+
+/* start content */
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+    color: rgb(255, 255, 255);
+}
+.content .text h2{
+    font-size: 60px;
+    color: rgb(182, 239, 234);
+    text-shadow: 3px 3px 3px red;
+}
+.content .text p{
+    font-size: 20px;
+    margin: 40px;
+}
+.content .text a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border: 2px solid burlywood;
+    margin: 30px 0 0 30px ; 
+    transition: 0.5s;  
+}
+.content .text a:hover{
+    background-color: burlywood;
+}
+.content .image{
+    width: 30%;
+}
+.content .image img{
+    width: 400px;
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px rgb(170, 132, 132));
+}
+
+/* end content */
+
+/* <!-- start icon --> */
+.icon{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border: 0 2px 2px 2px burlywood;
+}
+
+.icon img{
+    width: 80px;
+    transition: 0.5s;
+}
+.icon img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* <!-- end icon --> */
+
