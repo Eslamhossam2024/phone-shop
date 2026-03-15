@@ -28,14 +28,15 @@ header .logo{
     width: 60px;
     animation-name: rotate360;
     animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotate360{
     from{
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
     }
 }
 
@@ -72,7 +73,7 @@ header ul li a:hover{
     color: rgb(255, 255, 255);
 }
 .content .text h2{
-    font-size: 60px;
+    font-size: 40px;
     color: rgb(182, 239, 234);
     text-shadow: 3px 3px 3px red;
 }
@@ -98,7 +99,7 @@ header ul li a:hover{
 .content .image img{
     width: 400px;
     transition: 0.5s;
-    filter: drop-shadow(10px 10px 10px rgb(170, 132, 132));
+    filter: drop-shadow(20px 20px 20px rgb(180, 180, 180));
 }
 
 /* end content */
@@ -114,7 +115,7 @@ header ul li a:hover{
 
 .icon img{
     width: 80px;
-    transition: 0.5s;
+    transition: 1s;
 }
 .icon img:hover{
     transform: scale(1.2);
