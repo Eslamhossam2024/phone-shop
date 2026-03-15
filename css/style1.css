@@ -88,5 +88,5 @@
     transition: 1s;
 }
 #up:hover{
-    
+    transform: scale(1.2);
 }

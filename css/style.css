@@ -100,6 +100,9 @@ header ul li a:hover{
     width: 400px;
     transition: 0.5s;
     filter: drop-shadow(20px 20px 20px rgb(180, 180, 180));
+    animation-name: rotate360;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 /* end content */
